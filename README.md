@@ -1,6 +1,7 @@
 **English** | [Ελληνικά](README.el.md)
 
 # PulseGuard
+![CI](https://github.com/aggelosklaudianos-gif/pulseguard/actions/workflows/ci.yml/badge.svg)
 
 Cloud-native platform for remote monitoring of patients with hypertension.
 Patients record blood pressure readings at home; the system evaluates them

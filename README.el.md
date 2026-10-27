@@ -1,6 +1,7 @@
 [English](README.md) | **Ελληνικά**
 
 # PulseGuard
+![CI](https://github.com/aggelosklaudianos-gif/pulseguard/actions/workflows/ci.yml/badge.svg)
 
 Cloud-native πλατφόρμα απομακρυσμένης παρακολούθησης ασθενών με υπέρταση.
 Οι ασθενείς καταγράφουν μετρήσεις αρτηριακής πίεσης από το σπίτι· το σύστημα
@@ -20,7 +21,7 @@ Java 25 · Spring Boot 4.1 · PostgreSQL + TimescaleDB · Docker
     cd core-service
     ./mvnw spring-boot:run
 
-Έλεγχος υγείας: http://localhost:8080/actuator/health
+Έλεγχος υγείας: http://localhost:8080/actuator/healthg
 
 ## Πρόοδος
 
