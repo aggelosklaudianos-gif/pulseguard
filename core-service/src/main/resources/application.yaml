@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: core-service
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/pulseguard}
+    username: ${DB_USERNAME:pulseguard}
+    password: ${DB_PASSWORD:pulseguard}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always

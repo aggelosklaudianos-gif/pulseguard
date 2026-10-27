@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: timescale/timescaledb:latest-pg17
+    container_name: pulseguard-postgres
+    environment:
+      POSTGRES_DB: pulseguard
+      POSTGRES_USER: pulseguard
+      POSTGRES_PASSWORD: pulseguard
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pulseguard -d pulseguard"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  pgdata:
